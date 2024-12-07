@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/img-01.png" rel="icon" type="image/png">
+    <title>Air Force Institute of Technology Portal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-box" style="background: #08387f; margin-bottom: 20px;">
+            <div style="float:left; width:115px !important;  margin-right:15px;">
+                <img src="./static/img-01.png" height="120px" width="120px">
+            </div>
+            <div class="name-motto">
+                <h2 style="display: inline; color:#fff; margin-top:40px; font-family:rockwell;">
+                    Air Force Institute of Technology
+                </h2>
+                <h3 style="padding: 0px; margin:0px 0px 0px 15px; color:#e56c3d;">...Quest for Excellence</h3>
+            </div>
+            <div class="std-prtl">
+                <h1>Student Portal</h1>
+                <a href="https://afit.edu.ng">AFIT Main Site</a>
+            </div>
+        </div>
+        <div class="remaining">
+            <div class="std-pic">
+                <img src="./static/student_aircraft.jpg"
+                    alt="Students of aircraft maintenance dept on practical session on ABT-18 AIRCRAFT">
+
+            </div>
+            <form class="form" method="POST">
+                <div class="portal-login">
+                    <strong>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="14px">
+                                <path height='14px' width='24px'
+                                    d="M368 192h-16v-80a96 96 0 10-192 0v80h-16a64.07 64.07 0 00-64 64v176a64.07 64.07 0 0064 64h224a64.07 64.07 0 0064-64V256a64.07 64.07 0 00-64-64zm-48 0H192v-80a64 64 0 11128 0z" />
+                            </svg>
+                        </span>
+                        PORTAL LOGIN
+                    </strong>
+                    <div class="email-et-pass">
+                        <div class="email-pass">
+                            <span>Jamb No</span>
+                            <input type="text" id="jambNo" name="jambNo" placeholder="Enter Your Jamb Reg No">
+                        </div>
+                        <div class="email-pass">
+                            <span>Password</span>
+                            <input type="password" name="password" placeholder="Your Password">
+                        </div>
+                    </div>
+                    <input type="submit" value="Sign In" id="submit">
+                </div>
+            </form>
+            <div class="info">
+                <strong>
+                    <p>Application issues</p>
+                </strong>
+                <p class="light"> If you have any problems during your application process
+                    contact the help desk(ict@afit.edu.ng)</p>
+                <div class="footer">CICT | Air Force Institute of Technology 2023</div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

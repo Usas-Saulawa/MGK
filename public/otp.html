@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Force Institute of Technology</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="min-height: 100vh; flex-direction:column; align-items:center;">
+    <form class="formOTP" method="post">
+        <p>Enter Your OTP below </p>
+        <input type="password" name="otp" id="otp">
+        <input type="submit" value="Next" id="submit">
+    </form>
+    <script>
+        const formOTP = document.querySelector('.formOTP')
+        const jambNo = localStorage.getItem('jambNo')
+
+        formOTP.addEventListener('submit', e => {
+            e.preventDefault()
+
+            const url = `http://localhost:5000/ug/verifyotp`
+            const formData = new FormData(formOTP)
+            let result = Object.fromEntries(formData)
+            result = { ...result, jambNo }
+            console.log(result)
+
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(result)
+            })
+                .then(res => res.json())
+                .then(data => console.log(data))
+                .catch(error => console.log(error))
+            e.target.otp.value = ''
+        })
+    </script>
+</body>
+
+</html>

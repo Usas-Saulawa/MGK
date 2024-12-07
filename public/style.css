@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 1170px;
+    flex-wrap: wrap;
+}
+
+.header-box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    padding: 10px 0px 0px;
+}
+
+.header-box .name-motto {
+    width: 500px;
+    margin-top: 10px;
+}
+
+.name-motto h2 {
+    font-weight: 400;
+    font-size: 1.7em;
+}
+
+.name-motto h3 {
+    font-size: 1.4em;
+    margin-left: 10px;
+}
+
+.std-prtl {
+    display: flex;
+    flex-direction: column;
+    margin-right: 250px;
+    padding-top: 20px;
+}
+
+.std-prtl a {
+    color: white;
+    text-decoration: none;
+    margin-left: 100px;
+    font-size: .9em;
+    font-weight: 300;
+}
+
+.std-prtl h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.remaining {
+    display: flex;
+    justify-content: center;
+}
+
+.std-pic {
+    width: 258px;
+    height: 258px;
+    padding: 4px;
+    background: rgb(179, 179, 179);
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.std-pic img {
+    height: 250px;
+    width: 250px;
+}
+
+.info .footer {
+    padding: 3px 50px;
+    background: rgb(216, 216, 216);
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.info strong p {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.info .light {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.info {
+    width: 400px;
+}
+
+form {
+    width: 500px;
+}
+
+.portal-login {
+    margin: 10px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portal-login strong {
+    padding: 5px 10px;
+    background: rgb(231, 231, 231);
+    width: inherit !important;
+}
+
+.email-et-pass {
+    margin: 5px 0px;
+}
+
+.portal-login .email-pass {
+    display: flex;
+    margin: 15px 10px;
+    background: rgb(231, 231, 231);
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.portal-login #submit {
+    margin: 10px;
+    background: #494a5e;
+    padding: 6px 12px;
+    align-self: flex-start;
+    color: white;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    font-size: .9em;
+    margin-bottom: 25px;
+}
+
+.portal-login .email-pass span {
+    padding: 5px 10px;
+}
+
+.email-pass input {
+    flex-grow: 1;
+    border: none;
+    outline: 1px skyblue;
+    padding-left: 10px;
+}
+
+#otp {
+    margin: 15px 0px;
+    height: 40px;
+    border: 1px solid #494a5e;
+    outline: none;
+    font-size: 1.2em;
+    width: 150px;
+    padding: 5px;
+}
